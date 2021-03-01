@@ -17,5 +17,5 @@ func testGracefulShutDown(res http.ResponseWriter, req *http.Request) {
 }
 
 func New(r *mux.Router) {
-	r.HandleFunc("/test-graceful-shutdown", testGracefulShutDown).Methods(http.MethodPost)
+	r.HandleFunc("/test-graceful-shutdown", testGracefulShutDown).Methods(http.MethodGet)
 }
